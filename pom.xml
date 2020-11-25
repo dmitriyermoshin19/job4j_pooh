@@ -17,7 +17,7 @@
   </properties>
 
   <!--
-  <dependency> hamcrest, junit, log4j, quartz
+  <dependency> hamcrest, junit, jcip, mockito
      <profile>
      <plugin> javadoc, checkstyle, jacoco
     -->
@@ -35,29 +35,17 @@
       <scope>test</scope>
     </dependency>
 
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
     <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-api</artifactId>
-      <version>2.13.0</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-core</artifactId>
-      <version>2.13.0</version>
+      <groupId>net.jcip</groupId>
+      <artifactId>jcip-annotations</artifactId>
+      <version>1.0</version>
     </dependency>
 
     <dependency>
-      <groupId>org.quartz-scheduler</groupId>
-      <artifactId>quartz</artifactId>
-      <version>2.3.2</version>
-    </dependency>
-    <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-slf4j-impl  для шедулера -->
-    <dependency>
-      <groupId>org.apache.logging.log4j</groupId>
-      <artifactId>log4j-slf4j-impl</artifactId>
-      <version>2.13.2</version>
+      <groupId>org.mockito</groupId>
+      <artifactId>mockito-core</artifactId>
+      <version>3.5.13</version>
+      <scope>test</scope>
     </dependency>
 
   </dependencies>
